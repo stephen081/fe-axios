@@ -1,3 +1,5 @@
-function dtest(){
-    console.log(132)
+import { userApi } from "./path/path";
+
+export const api = {
+    ...userApi
 }
