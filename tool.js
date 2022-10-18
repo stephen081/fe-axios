@@ -30,7 +30,7 @@ export const handleNetworkError = (errStatus) => {
         "505": "http版本不支持该请求",
     };
     if (errStatus) {
-        message.error(netWorkErrMap[errStatus] ? ? `其他连接错误 --${errStatus}`)
+        message.error(netWorkErrMap[errStatus] ?? `其他连接错误 --${errStatus}`)
         return
     }
     message.error('无法连接到服务器')
